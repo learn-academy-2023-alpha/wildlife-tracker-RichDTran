@@ -18,8 +18,6 @@ class WildTrackersController < ApplicationController
         end
     end
 
-    
-
     def destroy
         animal = WildTracker.find(params[:id])
         if animal.destroy
@@ -35,7 +33,7 @@ class WildTrackersController < ApplicationController
         if animal.valid?
             render json: animal
         else
-            render json: guitar.errors
+            render json: animal.errors
         end
     end
 
