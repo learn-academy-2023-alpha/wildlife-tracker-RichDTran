@@ -1,0 +1,2 @@
+class WildTracker < ApplicationRecord
+end
